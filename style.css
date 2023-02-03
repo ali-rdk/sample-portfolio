@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-ribbon{
+    height: 90rem;
+    width: 13rem;
+    background-color: dimgray;
+    margin: 0 7rem;
+    transform: rotate(-30deg);
+}
+
+.right-ribbon::before,.right-ribbon::after{
+    content: "";
+    height: 400rem;
+    width: 30rem;
+    background-color: rgb(252, 74, 112);
+}
+
+.left-ribbon{
+    height: 90rem;
+    width: 13rem;
+    background-color: dimgray;
+    margin: -40rem 9rem;
+    transform: rotate(-390deg);
+}
+
+.left-ribbon::after{
+    content: "";
+    background-color: rgb(252, 74, 112);
+}
+
+.profile{
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    margin: 20rem 30rem;
+}
+
+.logo{
+    position: absolute;
+    z-index: 3;
+    margin: 30rem 37rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+    height: 10rem;
+}
