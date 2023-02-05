@@ -1,0 +1,125 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(58deg, #212121 5%, #f50 5% 15%, #212121 15% 20%, #fff 20% 85%, #f50 85% 90%, #212121 90% 100%);
+}
+
+.img-back{
+    top: 15vh;
+    left: 10vw;
+    width: 25rem;
+    height: 25rem;
+    background-color: red;
+    background-image: linear-gradient(90deg,#f50 50%, #212121 50% 100%);
+    border-radius: 50%;
+    padding: 1rem;
+    position: absolute;
+}
+
+.profile{
+    background-color: #212121;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.logo{
+    position: absolute;
+    top: 55vh;
+    left: 25vw;
+    border-radius: 0.7rem;
+}
+
+.info-section{
+    position: absolute;
+    height: 40rem;
+    width: 40rem;
+    top: 5vh;
+    left: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-section h1{
+    margin: 5rem 10rem;
+}
+
+.info-table{
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+}
+
+.info-table ul{
+    flex-direction: row;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.info-table ul::after{
+    content: '';
+    background-color: #212121;
+    height: 1px;
+    width: 100%;
+    display: block;
+}
+
+.modal-button{
+    background-color: #f50;
+    height: 3rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    border-color: transparent;
+    right: 0;
+}
+
+.modal-back{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #2121218f;
+    top: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.modal{
+    background-color: #fff;
+    height: 25rem;
+    width: 40rem;
+    margin: 10rem auto;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#modal-avatar{
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+
+#username{
+    height: 2rem;
+    border-radius: 0.5rem;
+}
+
+#save{
+    height: 2rem;
+    background-color: #f50;
+    border-radius: 0.5rem;
+}
