@@ -9,7 +9,8 @@ const body = document.getElementById('body');
 const name = document.getElementById('name');
 const username = document.getElementById('username');
 const img_back = document.getElementById('.img-back');
-let color = '';
+const root = document.querySelectorAll(':root');
+console.log(root)
 
 modal_btn.addEventListener('click', (e)=>{
     modal.style.top = '0%';
@@ -21,14 +22,9 @@ modal.addEventListener('click', (e)=>{
     }
 });
 
-color_picker.addEventListener('change',e=>{
-    color = e.target.value
-})
-
 save_btn.addEventListener('click', (e)=>{
     modal.style.top = '-100%';
     avatar.src = modal_avatar.src
-    body.style.backgroundColor = `linear-gradient(58deg, #212121 5%, {color} 5% 15%, #212121 15% 20%, #fff 20% 85%, {color} 85% 90%, #212121 90% 100%)`;
     name.innerText = username.value;
-    img_back = `linear-gradient(90deg,{color} 50%, #212121 50% 100%)`;
+    root.style.setProperty('--primary', `${color_picker.value}`)
 });
